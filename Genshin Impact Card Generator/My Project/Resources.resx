@@ -118,10 +118,223 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Achievement__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Achievement (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Achievement_2_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Achievement-2_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Achievement_3_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Achievement-3_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Achievement_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Achievement_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Albedo_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Albedo_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Albedo_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Albedo_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Amber_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Amber_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Amber_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Amber_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbara_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbara_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbara_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbara_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beidou_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beidou_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beidou_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beidou_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bennett_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bennett_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bennett_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bennett_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Childe_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Childe_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Childe_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Childe_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chongyun_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chongyun_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chongyun_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chongyun_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diluc_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diluc_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diluc_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diluc_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diona_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diona_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diona_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diona_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eula_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eula_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eula_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eula_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fischl_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fischl_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fischl_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fischl_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ganyu_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ganyu_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ganyu_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ganyu_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hu_Tao_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hu Tao_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hu_Tao_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hu Tao_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jean_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jean_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jean_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jean_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kaeya_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaeya_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kaeya_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaeya_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kazuha_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kazuha_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kazuha_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kazuha_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keqing_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keqing_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keqing_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keqing_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KFC_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KFC_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Klee_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klee_Banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Klee_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Klee_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Klee_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisa_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisa_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisa_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisa_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lumine_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lumine_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mona_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mona_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mona_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mona_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ningguang_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ningguang_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ningguang_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ningguang_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Noelle_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Noelle_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Noelle_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Noelle_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Papa_and_Daughter_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Papa and Daughter_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Qiqi_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Qiqi_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Qiqi_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Qiqi_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Razor_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Razor_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Razor_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Razor_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rosaria_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rosaria_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rosaria_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rosaria_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sucrose_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sucrose_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sucrose_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sucrose_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Travlers_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Travlers_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Venti_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Venti_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Venti_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Venti_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xiao_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xiao_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xiao_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xiao_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xingling_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xingling_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xingling_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xingling_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xingqui_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xingqui_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xingqui_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xingqui_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xinyan_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xinyan_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xinyan_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xinyan_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yanfei_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yanfei_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yanfei_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yanfei_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zhongli_Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zhongli_Banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zhongli_FanArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zhongli_FanArt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

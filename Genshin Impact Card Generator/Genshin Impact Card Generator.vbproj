@@ -73,7 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Arrays\Images.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -121,10 +120,226 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Klee_Banner.png" />
+    <None Include="Resources\Achievement_Banner.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Achievement %282%29.png" />
+    <None Include="Resources\Achievement-2_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achievement-3_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albedo_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amber_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barbara_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beidou_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bennett_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Childe_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chongyun_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diluc_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diona_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eula_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fischl_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ganyu_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hu Tao_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jean_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaeya_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kazuha_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keqing_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Klee_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lisa_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mona_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ningguang_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noelle_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qiqi_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Razor_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rosaria_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sucrose_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venti_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xiao_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xingling_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xingqui_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xinyan_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yanfei_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zhongli_Banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albedo_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amber_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barbara_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beidou_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bennett_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Childe_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chongyun_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diluc_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diona_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eula_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fischl_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ganyu_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hu Tao_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jean_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaeya_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kazuha_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keqing_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KFC_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Klee_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lisa_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lumine_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mona_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ningguang_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noelle_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papa and Daughter_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qiqi_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Razor_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rosaria_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sucrose_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travlers_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venti_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xiao_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xingling_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xingqui_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xinyan_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yanfei_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zhongli_FanArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

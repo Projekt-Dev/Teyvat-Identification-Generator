@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,28 +20,15 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.pb1 = New System.Windows.Forms.PictureBox()
         Me.btnUUID = New System.Windows.Forms.Button()
         Me.txtBoxUUID = New System.Windows.Forms.TextBox()
         Me.txtBoxName = New System.Windows.Forms.TextBox()
-        Me.pbTest = New System.Windows.Forms.PictureBox()
-        Me.pnlImages = New System.Windows.Forms.Panel()
+        Me.pb1 = New System.Windows.Forms.PictureBox()
+        Me.imgPanel = New System.Windows.Forms.FlowLayoutPanel()
         CType(Me.pb1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbTest, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlImages.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'pb1
-        '
-        Me.pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pb1.Location = New System.Drawing.Point(0, 0)
-        Me.pb1.Name = "pb1"
-        Me.pb1.Size = New System.Drawing.Size(420, 200)
-        Me.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pb1.TabIndex = 0
-        Me.pb1.TabStop = False
         '
         'btnUUID
         '
@@ -69,32 +56,33 @@ Partial Class Form1
         Me.txtBoxName.Size = New System.Drawing.Size(408, 20)
         Me.txtBoxName.TabIndex = 4
         '
-        'pbTest
+        'pb1
         '
-        Me.pbTest.BackgroundImage = Global.Genshin_Impact_Card_Generator.My.Resources.Resources.Achievement__2_
-        Me.pbTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbTest.Location = New System.Drawing.Point(30, 0)
-        Me.pbTest.Name = "pbTest"
-        Me.pbTest.Size = New System.Drawing.Size(420, 200)
-        Me.pbTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pbTest.TabIndex = 5
-        Me.pbTest.TabStop = False
+        Me.pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pb1.Location = New System.Drawing.Point(0, 0)
+        Me.pb1.Name = "pb1"
+        Me.pb1.Size = New System.Drawing.Size(420, 200)
+        Me.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.pb1.TabIndex = 0
+        Me.pb1.TabStop = False
         '
-        'pnlImages
+        'imgPanel
         '
-        Me.pnlImages.Controls.Add(Me.pbTest)
-        Me.pnlImages.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlImages.Location = New System.Drawing.Point(782, 0)
-        Me.pnlImages.Name = "pnlImages"
-        Me.pnlImages.Size = New System.Drawing.Size(482, 681)
-        Me.pnlImages.TabIndex = 6
+        Me.imgPanel.AutoScroll = True
+        Me.imgPanel.Dock = System.Windows.Forms.DockStyle.Right
+        Me.imgPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
+        Me.imgPanel.Location = New System.Drawing.Point(819, 0)
+        Me.imgPanel.Name = "imgPanel"
+        Me.imgPanel.Size = New System.Drawing.Size(445, 681)
+        Me.imgPanel.TabIndex = 6
+        Me.imgPanel.WrapContents = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 681)
-        Me.Controls.Add(Me.pnlImages)
+        Me.Controls.Add(Me.imgPanel)
         Me.Controls.Add(Me.txtBoxName)
         Me.Controls.Add(Me.txtBoxUUID)
         Me.Controls.Add(Me.btnUUID)
@@ -102,8 +90,6 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.pb1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbTest, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlImages.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -113,6 +99,5 @@ Partial Class Form1
     Friend WithEvents btnUUID As Button
     Friend WithEvents txtBoxUUID As TextBox
     Friend WithEvents txtBoxName As TextBox
-    Friend WithEvents pbTest As PictureBox
-    Friend WithEvents pnlImages As Panel
+    Friend WithEvents imgPanel As FlowLayoutPanel
 End Class

@@ -24,17 +24,15 @@ Public Class Form1
     Dim subHeaderFont As Font = New Font("Monsterrat", 36, FontStyle.Regular)
 
     'Misc
-    Dim images As Image() = { 'Will be changed to images class
-        My.Resources.Klee_Banner,
-        My.Resources.Achievement__2_
-    }
+    Dim rescSet As Resources.ResourceSet = My.Resources.ResourceManager.GetResourceSet(Globalization.CultureInfo.CurrentCulture, True, True)
+    Dim imgList As New List(Of Image)
+    Dim newSize As Size = New Size(420, 200)
+
 #End Region
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        pb1.BackgroundImage = images(0)
-        pbTest.BackgroundImage = images(1)
-        defaultImage = pb1.BackgroundImage
-        orgImage = pb1.BackgroundImage
+        imageDefaults()
+
     End Sub
 
     Private Sub txtBoxUUID_TextChanged(sender As Object, e As EventArgs) Handles txtBoxUUID.TextChanged
@@ -89,18 +87,28 @@ Public Class Form1
         orgImage = pb1.BackgroundImage
         imageUpdate()
     End Sub
-#End Region
 
-#Region "Custom Events"
-    Public Sub New()
-        ' This call is required by the designer.
-        InitializeComponent()
-        ' Add any initialization after the InitializeComponent() call.
-        For Each pb As PictureBox In pnlImages.Controls.OfType(Of PictureBox)
+    Private Sub imageDefaults()
+        For Each dict As DictionaryEntry In rescSet.OfType(Of Object)
+            If TypeOf dict.Value Is Image Then
+                imgList.Add(dict.Value)
+            End If
+        Next
+        pb1.BackgroundImage = imgList(0)
+        defaultImage = pb1.BackgroundImage
+        orgImage = pb1.BackgroundImage
+
+        For i = 1 To imgList.Count - 1
+            Dim pb As PictureBox = New PictureBox
+            pb.BackgroundImage = imgList(i)
+            pb.BackgroundImageLayout = ImageLayout.Stretch
+            pb.Size = newSize
+            imgPanel.Controls.Add(pb)
             AddHandler pb.Click, AddressOf imageChange
         Next
 
     End Sub
+
 #End Region
 
 End Class
