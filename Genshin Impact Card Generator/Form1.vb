@@ -32,14 +32,35 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FormDefaults()
     End Sub
-
-    Private Sub TxtBoxUUID_TextChanged(sender As Object, e As EventArgs) Handles txtBoxUUID.TextChanged
-        ImageUpdate()
+    'Anything we would want to run on form load put in here.
+    Private Sub FormDefaults()
+        GrabImages()
     End Sub
 
+
+#Region "Button Events"
+    Private Sub TxtBoxUUID_TextChanged(sender As Object, e As EventArgs) Handles txtBoxUUID.TextChanged
+        'Check for character limit of 9
+        Dim charLimit = 9
+        Dim currentCharCount = txtBoxUUID.Text.Length
+        If currentCharCount > charLimit Then
+            MessageBox.Show("UUID's are 9 numbers long.")
+            txtBoxUUID.Text = txtBoxUUID.Text.Remove(txtBoxUUID.Text.Length - 1)
+        Else
+            ImageUpdate()
+        End If
+    End Sub
+    'Makes the TextBox only allow numbers
+    Private Sub TxtBoxUUID_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtBoxUUID.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) AndAlso (e.KeyChar <> ".") Then
+            e.Handled = True
+        End If
+    End Sub
     Private Sub BtnUUID_Click(sender As Object, e As EventArgs) Handles btnUUID.Click
         ImageSave()
     End Sub
+
+#End Region
 
 #Region "Methods"
 
@@ -132,11 +153,6 @@ Public Class Form1
             'Event handler - every PictureBox click would activate imageChange method
             AddHandler pb.Click, AddressOf ImageChange
         Next
-    End Sub
-
-    'Anything we would want to run on form load put in here.
-    Private Sub FormDefaults()
-        GrabImages()
     End Sub
 
 #End Region
