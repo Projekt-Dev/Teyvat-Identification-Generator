@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnUUID = New System.Windows.Forms.Button()
         Me.txtBoxUUID = New System.Windows.Forms.TextBox()
-        Me.txtBoxName = New System.Windows.Forms.TextBox()
         Me.pb1 = New System.Windows.Forms.PictureBox()
         Me.imgPanel = New System.Windows.Forms.FlowLayoutPanel()
         CType(Me.pb1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,14 +46,6 @@ Partial Class Form1
         Me.txtBoxUUID.Name = "txtBoxUUID"
         Me.txtBoxUUID.Size = New System.Drawing.Size(408, 20)
         Me.txtBoxUUID.TabIndex = 2
-        '
-        'txtBoxName
-        '
-        Me.txtBoxName.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.txtBoxName.Location = New System.Drawing.Point(12, 234)
-        Me.txtBoxName.Name = "txtBoxName"
-        Me.txtBoxName.Size = New System.Drawing.Size(408, 20)
-        Me.txtBoxName.TabIndex = 4
         '
         'pb1
         '
@@ -83,7 +74,6 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.imgPanel)
-        Me.Controls.Add(Me.txtBoxName)
         Me.Controls.Add(Me.txtBoxUUID)
         Me.Controls.Add(Me.btnUUID)
         Me.Controls.Add(Me.pb1)
@@ -98,6 +88,5 @@ Partial Class Form1
     Friend WithEvents pb1 As PictureBox
     Friend WithEvents btnUUID As Button
     Friend WithEvents txtBoxUUID As TextBox
-    Friend WithEvents txtBoxName As TextBox
     Friend WithEvents imgPanel As FlowLayoutPanel
 End Class

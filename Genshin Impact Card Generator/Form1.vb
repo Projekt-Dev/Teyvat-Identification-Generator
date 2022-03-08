@@ -1,6 +1,5 @@
 ﻿Imports System.IO
 
-
 'When finishing laying out textboxes use event handler for imageUpdate()
 'Find a different font to use for UUID and one for subheader
 'Find a UI layout and color scheme
@@ -9,68 +8,73 @@ Public Class Form1
 #Region "Variables"
     'ID Card
     Dim UUID As String = Nothing
-    Dim fileName As String = "ID Card"
 
     'Image
     Dim defaultImage As Bitmap
     Dim orgImage As Bitmap
-    Dim imgSize As Size = New Size(420, 200)
-
-    Dim imgPath = Path.GetDirectoryName($"{_path}\Images")
-    Dim imgList As New List(Of Image)
+    Dim imgSize As New Size(420, 200)
+    ReadOnly imgList As New List(Of Image)
 
     'Saves
-    Dim _path = AppDomain.CurrentDomain.BaseDirectory
-    Dim dir As String = Path.GetDirectoryName(_path)
-    Dim saveDir = Directory.CreateDirectory($"{dir}\Saved Images")
+    ReadOnly _path = AppDomain.CurrentDomain.BaseDirectory
+    ReadOnly dir As String = Path.GetDirectoryName(_path)
+    ReadOnly saveDir = Directory.CreateDirectory($"{dir}\Saved Images")
 
     'Fonts
-    Dim headerFont As Font = New Font("Monsterrat", 36, FontStyle.Regular)
-    Dim subHeaderFont As Font = New Font("Monsterrat", 36, FontStyle.Regular)
+    ReadOnly headerFont As New Font("Montserrat", 36, FontStyle.Regular)
+    ReadOnly subHeaderFont As New Font("Montserrat", 36, FontStyle.Regular)
 
     'Misc
-    Dim rescSet As Resources.ResourceSet = My.Resources.ResourceManager.GetResourceSet(Globalization.CultureInfo.CurrentCulture, True, True)
-    Dim util As New utilities
-
+    ReadOnly rescSet As Resources.ResourceSet = My.Resources.ResourceManager.GetResourceSet(Globalization.CultureInfo.CurrentCulture, True, True)
+    ReadOnly util As New utilities
 #End Region
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        formDefaults()
+        FormDefaults()
     End Sub
 
-    Private Sub txtBoxUUID_TextChanged(sender As Object, e As EventArgs) Handles txtBoxUUID.TextChanged
-        imageUpdate()
+    Private Sub TxtBoxUUID_TextChanged(sender As Object, e As EventArgs) Handles txtBoxUUID.TextChanged
+        ImageUpdate()
     End Sub
 
-    Private Sub btnUUID_Click(sender As Object, e As EventArgs) Handles btnUUID.Click
-        imageSave()
+    Private Sub BtnUUID_Click(sender As Object, e As EventArgs) Handles btnUUID.Click
+        ImageSave()
     End Sub
 
 #Region "Methods"
 
-    Private Sub imageUpdate()
+    Private Sub ImageUpdate()
         UUID = txtBoxUUID.Text
-        Dim newImage As Bitmap = New Bitmap(defaultImage)
-        imageRepeat(newImage)
+        Dim newImage As New Bitmap(defaultImage)
+        ImageText(newImage)
 
         pb1.BackgroundImage = Nothing
         pb1.BackgroundImage = newImage
     End Sub
 
-    Private Sub imageSave()
+    Private Sub ImageSave()
         UUID = txtBoxUUID.Text
-        fileName = txtBoxName.Text
-        Dim newImage As Bitmap = New Bitmap(defaultImage)
-        If txtBoxName.Text IsNot String.Empty Then 'Check if ID Card.png already exists if it does increment file[Not Added]
-            fileName = txtBoxName.Text
-        Else 'Check if ID Card.png already exists if it does increment file[Not Added]
-            fileName = "ID Card"
-        End If
-        imageRepeat(newImage)
+        Dim fileIncrement As Integer = 0
+        Dim fileName = $"ID Card - {fileIncrement}"
+        Dim newImage As New Bitmap(defaultImage)
+
+        'Check if ID Card - 0.png already exists if it does increment file
+        While File.Exists($"{saveDir}/{fileName}.{Imaging.ImageFormat.Png}")
+            If File.Exists($"{saveDir}/{fileName}.{Imaging.ImageFormat.Png}") Then
+                fileIncrement += 1
+                fileName = $"ID Card - {fileIncrement}"
+            Else
+                Exit While
+            End If
+        End While
+
+        fileName = $"ID Card - {fileIncrement}"
+        ImageText(newImage)
         newImage.Save($"{saveDir}/{fileName}.{Imaging.ImageFormat.Png}")
     End Sub
 
-    Private Sub imageRepeat(img As Bitmap)
+    'Add text to the image
+    Private Sub ImageText(img As Bitmap)
         Dim g As Graphics
         g = Graphics.FromImage(img)
         Using sf = New StringFormat() With {
@@ -81,40 +85,41 @@ Public Class Form1
         End Using
     End Sub
 
-    'Changes current image to a image click from the picturebox
-    Private Sub imageChange(sender As Object, e As EventArgs)
+    'Changes current image to a image clicked from a PictureBox
+    Private Sub ImageChange(sender As Object, e As EventArgs)
         Dim pb As PictureBox
         pb = CType(sender, PictureBox)
         pb1.BackgroundImage = pb.BackgroundImage
         defaultImage = pb1.BackgroundImage
         pb.BackgroundImage = orgImage
         orgImage = pb1.BackgroundImage
-        imageUpdate()
+        ImageUpdate()
     End Sub
 
-    'Anything we would want to run on form load put in here.
-    Private Sub formDefaults()
-
-        'Go through resources and if an image is found add to list?
+    'Get all images from resources and add them to the image selection.
+    Private Sub GrabImages()
+        'Go through resources and if an image is found add to list
         For Each dict As DictionaryEntry In rescSet.OfType(Of Object)
             If TypeOf dict.Value Is Image Then
                 imgList.Add(dict.Value)
             End If
         Next
 
-        'Goes through imgList and if an image with a width smaller than the given number is found it will be removed and then
+        'Goes through imgList and if an image with a width smaller than the given number is found it will be removed
         For Each img As Image In imgList.ToList
             If img.Width < 800 Then
                 imgList.Remove(img)
             End If
         Next
 
+        imgList.OrderBy(Function(f) f.Tag).ToList()
+
+
         pb1.BackgroundImage = imgList(0)
         defaultImage = pb1.BackgroundImage
         orgImage = pb1.BackgroundImage
-        'util.shuffleArray(imgList) 'Shuffle list of images
 
-        'Creates a picturebox for every image in the imgList with some default settings
+        'Creates a PictureBox for every image in the imgList with some default settings
         For i = 1 To imgList.Count - 1
 
             Dim pb As New PictureBox() With {
@@ -122,12 +127,16 @@ Public Class Form1
                 .BackgroundImageLayout = ImageLayout.Stretch,
                 .Size = imgSize
                 }
-            imgPanel.Controls.Add(pb) 'add picturebox to the imgPanel control
+            imgPanel.Controls.Add(pb) 'add PictureBox to the imgPanel control
 
-            'Event handler - every picturebox click would activate imageChange method
-            AddHandler pb.Click, AddressOf imageChange
+            'Event handler - every PictureBox click would activate imageChange method
+            AddHandler pb.Click, AddressOf ImageChange
         Next
+    End Sub
 
+    'Anything we would want to run on form load put in here.
+    Private Sub FormDefaults()
+        GrabImages()
     End Sub
 
 #End Region
