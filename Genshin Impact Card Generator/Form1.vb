@@ -13,7 +13,7 @@ Public Class Form1
     Dim defaultImage As Bitmap
     Dim orgImage As Bitmap
     Dim imgSize As New Size(420, 200)
-    ReadOnly imgList As New List(Of Image)
+    Dim imgList As New List(Of Image)
 
     'Saves
     ReadOnly _path = AppDomain.CurrentDomain.BaseDirectory
@@ -56,7 +56,7 @@ Public Class Form1
             e.Handled = True
         End If
     End Sub
-    Private Sub BtnUUID_Click(sender As Object, e As EventArgs) Handles btnUUID.Click
+    Private Sub BtnUUID_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         ImageSave()
     End Sub
 
@@ -120,12 +120,15 @@ Public Class Form1
     'Get all images from resources and add them to the image selection.
     Private Sub GrabImages()
         'Go through resources and if an image is found add to list
+        Dim t_List As New List(Of Image)
         For Each dict As DictionaryEntry In rescSet.OfType(Of Object)
             If TypeOf dict.Value Is Image Then
-                imgList.Add(dict.Value)
+                t_List.Add(dict.Value)
             End If
         Next
-
+        Dim rand As New Random
+        imgList = t_List.OrderBy(Function(x) rand.Next()).ToList()
+        'util.Sort(Of Image)(imgList)
         'Goes through imgList and if an image with a width smaller than the given number is found it will be removed
         For Each img As Image In imgList.ToList
             If img.Width < 800 Then

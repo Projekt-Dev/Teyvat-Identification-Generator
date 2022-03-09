@@ -22,22 +22,22 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnUUID = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.txtBoxUUID = New System.Windows.Forms.TextBox()
         Me.pb1 = New System.Windows.Forms.PictureBox()
         Me.imgPanel = New System.Windows.Forms.FlowLayoutPanel()
         CType(Me.pb1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnUUID
+        'btnSave
         '
-        Me.btnUUID.Font = New System.Drawing.Font("Inter", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUUID.Location = New System.Drawing.Point(426, 205)
-        Me.btnUUID.Name = "btnUUID"
-        Me.btnUUID.Size = New System.Drawing.Size(75, 23)
-        Me.btnUUID.TabIndex = 1
-        Me.btnUUID.Text = "Set UUID"
-        Me.btnUUID.UseVisualStyleBackColor = True
+        Me.btnSave.Font = New System.Drawing.Font("Inter", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.Location = New System.Drawing.Point(426, 205)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.TabIndex = 1
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
         '
         'txtBoxUUID
         '
@@ -75,7 +75,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.imgPanel)
         Me.Controls.Add(Me.txtBoxUUID)
-        Me.Controls.Add(Me.btnUUID)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.pb1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -86,7 +86,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents pb1 As PictureBox
-    Friend WithEvents btnUUID As Button
+    Friend WithEvents btnSave As Button
     Friend WithEvents txtBoxUUID As TextBox
     Friend WithEvents imgPanel As FlowLayoutPanel
 End Class
