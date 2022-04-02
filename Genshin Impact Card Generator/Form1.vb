@@ -34,7 +34,8 @@ Public Class Form1
     End Sub
     'Anything we would want to run on form load put in here.
     Private Sub FormDefaults()
-        GrabImages()
+        'GrabImages()
+        FolderImages()
     End Sub
 
 
@@ -102,7 +103,7 @@ Public Class Form1
                     .Alignment = StringAlignment.Center,
                     .LineAlignment = StringAlignment.Center
             }
-            g.DrawString(UUID, headerFont, New SolidBrush(Color.White), New Rectangle(0, 0, img.Width, img.Height), sf)
+            g.DrawString(UUID, headerFont, New SolidBrush(Color.White), New Rectangle(0, 125, img.Width, img.Height), sf)
         End Using
     End Sub
 
@@ -118,36 +119,58 @@ Public Class Form1
     End Sub
 
     'Get all images from resources and add them to the image selection.
-    Private Sub GrabImages()
-        'Go through resources and if an image is found add to list
-        Dim t_List As New List(Of Image)
-        For Each dict As DictionaryEntry In rescSet.OfType(Of Object)
-            If TypeOf dict.Value Is Image Then
-                t_List.Add(dict.Value)
-            End If
-        Next
-        Dim rand As New Random
-        imgList = t_List.OrderBy(Function(x) rand.Next()).ToList()
-        'util.Sort(Of Image)(imgList)
-        'Goes through imgList and if an image with a width smaller than the given number is found it will be removed
-        For Each img As Image In imgList.ToList
-            If img.Width < 800 Then
-                imgList.Remove(img)
-            End If
-        Next
+    'Private Sub GrabImages()
+    '    'Go through resources and if an image is found add to list
+    '    Dim t_List As New List(Of Image)
+    '    For Each dict As DictionaryEntry In rescSet.OfType(Of Object)
+    '        If TypeOf dict.Value Is Image Then
+    '            t_List.Add(dict.Value)
+    '        End If
+    '    Next
+    '    Dim rand As New Random
+    '    imgList = t_List.OrderBy(Function(x) rand.Next()).ToList()
+    '    'util.Sort(Of Image)(imgList)
+    '    'Goes through imgList and if an image with a width smaller than the given number is found it will be removed
+    '    For Each img As Image In imgList.ToList
+    '        If img.Width < 800 Then
+    '            imgList.Remove(img)
+    '        End If
+    '    Next
 
-        imgList.OrderBy(Function(f) f.Tag).ToList()
+    '    imgList.OrderBy(Function(f) f.Tag).ToList()
 
 
-        pb1.BackgroundImage = imgList(0)
+    '    pb1.BackgroundImage = imgList(0)
+    '    defaultImage = pb1.BackgroundImage
+    '    orgImage = pb1.BackgroundImage
+
+    '    'Creates a PictureBox for every image in the imgList with some default settings
+    '    For i = 1 To imgList.Count - 1
+
+    '        Dim pb As New PictureBox() With {
+    '            .BackgroundImage = imgList(i),
+    '            .BackgroundImageLayout = ImageLayout.Stretch,
+    '            .Size = imgSize
+    '            }
+    '        imgPanel.Controls.Add(pb) 'add PictureBox to the imgPanel control
+
+    '        'Event handler - every PictureBox click would activate imageChange method
+    '        AddHandler pb.Click, AddressOf ImageChange
+    '    Next
+    'End Sub
+
+    Private Sub FolderImages()
+        Dim folderImg As List(Of String) = Directory.GetFiles($"{AppDomain.CurrentDomain.BaseDirectory}\Images", "*.png").ToList
+
+        pb1.BackgroundImage = New Bitmap(folderImg(0))
         defaultImage = pb1.BackgroundImage
         orgImage = pb1.BackgroundImage
 
         'Creates a PictureBox for every image in the imgList with some default settings
-        For i = 1 To imgList.Count - 1
+        For i = 1 To folderImg.Count - 1
 
             Dim pb As New PictureBox() With {
-                .BackgroundImage = imgList(i),
+                .BackgroundImage = New Bitmap(folderImg(i)),
                 .BackgroundImageLayout = ImageLayout.Stretch,
                 .Size = imgSize
                 }
@@ -156,6 +179,7 @@ Public Class Form1
             'Event handler - every PictureBox click would activate imageChange method
             AddHandler pb.Click, AddressOf ImageChange
         Next
+
     End Sub
 
 #End Region
