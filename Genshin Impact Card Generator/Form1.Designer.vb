@@ -25,7 +25,8 @@ Partial Class Form1
         Me.btnSave = New System.Windows.Forms.Button()
         Me.txtBoxUUID = New System.Windows.Forms.TextBox()
         Me.pb1 = New System.Windows.Forms.PictureBox()
-        Me.imgPanel = New System.Windows.Forms.FlowLayoutPanel()
+        Me.pnlBanners = New System.Windows.Forms.FlowLayoutPanel()
+        Me.pnlAvatars = New System.Windows.Forms.FlowLayoutPanel()
         CType(Me.pb1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -57,26 +58,37 @@ Partial Class Form1
         Me.pb1.TabIndex = 0
         Me.pb1.TabStop = False
         '
-        'imgPanel
+        'pnlBanners
         '
-        Me.imgPanel.AutoScroll = True
-        Me.imgPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.imgPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
-        Me.imgPanel.Location = New System.Drawing.Point(819, 0)
-        Me.imgPanel.Name = "imgPanel"
-        Me.imgPanel.Size = New System.Drawing.Size(445, 681)
-        Me.imgPanel.TabIndex = 6
-        Me.imgPanel.WrapContents = False
+        Me.pnlBanners.AutoScroll = True
+        Me.pnlBanners.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlBanners.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
+        Me.pnlBanners.Location = New System.Drawing.Point(819, 0)
+        Me.pnlBanners.Name = "pnlBanners"
+        Me.pnlBanners.Size = New System.Drawing.Size(445, 681)
+        Me.pnlBanners.TabIndex = 6
+        Me.pnlBanners.WrapContents = False
+        '
+        'pnlAvatars
+        '
+        Me.pnlAvatars.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
+        Me.pnlAvatars.Location = New System.Drawing.Point(595, 0)
+        Me.pnlAvatars.Name = "pnlAvatars"
+        Me.pnlAvatars.Size = New System.Drawing.Size(227, 698)
+        Me.pnlAvatars.TabIndex = 7
+        Me.pnlAvatars.WrapContents = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 681)
-        Me.Controls.Add(Me.imgPanel)
         Me.Controls.Add(Me.txtBoxUUID)
+        Me.Controls.Add(Me.pnlAvatars)
+        Me.Controls.Add(Me.pnlBanners)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.pb1)
+        Me.MinimumSize = New System.Drawing.Size(1280, 720)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.pb1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -88,5 +100,6 @@ Partial Class Form1
     Friend WithEvents pb1 As PictureBox
     Friend WithEvents btnSave As Button
     Friend WithEvents txtBoxUUID As TextBox
-    Friend WithEvents imgPanel As FlowLayoutPanel
+    Friend WithEvents pnlBanners As FlowLayoutPanel
+    Friend WithEvents pnlAvatars As FlowLayoutPanel
 End Class

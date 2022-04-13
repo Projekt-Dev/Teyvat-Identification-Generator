@@ -49,6 +49,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Projekt-Controls">
+      <HintPath>..\..\..\_Classes\Projekt-Controls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -74,6 +77,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Images.vb" />
     <Compile Include="Classes\utilities.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
