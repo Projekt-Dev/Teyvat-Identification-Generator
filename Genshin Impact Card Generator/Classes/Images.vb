@@ -7,28 +7,26 @@ NotInheritable Class Images
     Private Shared defaultImage As Bitmap
     Private Shared orgImage As Bitmap
     Private Shared imgSize As New Size(420, 200)
-    Private Shared imgList As New List(Of Image)
+    Private Shared ReadOnly imgList As New List(Of Image)
     Private Shared avatar As Bitmap
-    Private Shared bannerImg As New List(Of Image)
+    Private Shared ReadOnly bannerImg As New List(Of Image)
     Private Shared profileImg As List(Of String)
 
     'ID Card
-    Private Shared UUID As String = Nothing
+    Private Shared UUID As String = String.Empty
 
     'Saves
-    Private Shared _path = AppDomain.CurrentDomain.BaseDirectory
-    Private Shared dir As String = Path.GetDirectoryName(_path)
-    Private Shared saveDir = Directory.CreateDirectory($"{dir}\Saved Images")
+    Private Shared ReadOnly path = AppDomain.CurrentDomain.BaseDirectory
+    Private Shared ReadOnly dir As String = System.IO.Path.GetDirectoryName(path)
+    Private Shared ReadOnly saveDir = Directory.CreateDirectory($"{dir}\Saved Images")
 
     'Fonts
-    Private Shared headerFont As New Font("Montserrat", 36, FontStyle.Regular)
-    Private Shared subHeaderFont As New Font("Montserrat", 36, FontStyle.Regular)
+    Private Shared ReadOnly headerFont As New Font("Montserrat", 36, FontStyle.Regular)
+    Private Shared ReadOnly subHeaderFont As New Font("Montserrat", 36, FontStyle.Regular)
 
     'Misc
-    Private Shared rescSet As Resources.ResourceSet = My.Resources.ResourceManager.GetResourceSet(Globalization.CultureInfo.CurrentCulture, True, True)
-    Private Shared util As New utilities
-    Private Shared images As New Images
-    Private Shared avaPB As PictureBox
+    Private Shared ReadOnly images As New Images
+    Private Shared ReadOnly avaPB As PictureBox
 #End Region
 
     Private Shared Function CreateBannerAsync(banner As Image, avatar As Image)
@@ -175,20 +173,18 @@ NotInheritable Class Images
             'Event handler - every PictureBox click would activate AvatarChange method
             AddHandler pb.Click, AddressOf AvatarChange
         Next
-
+        ImageText(Form1.pb1.BackgroundImage)
     End Sub
 
     'Changes current image to a image clicked from a PictureBox
     Private Shared Sub BannerChange(sender As Object, e As EventArgs)
         Dim pb As PictureBox
         pb = CType(sender, PictureBox)
-        If Form1.pb1.BackgroundImage IsNot pb.BackgroundImage Then
-            Form1.pb1.BackgroundImage = pb.BackgroundImage
-            defaultImage = Form1.pb1.BackgroundImage
-            pb.BackgroundImage = orgImage
-            orgImage = Form1.pb1.BackgroundImage
-            ImageUpdate()
-        End If
+        Form1.pb1.BackgroundImage = pb.BackgroundImage
+        defaultImage = Form1.pb1.BackgroundImage
+        pb.BackgroundImage = orgImage
+        orgImage = Form1.pb1.BackgroundImage
+        ImageUpdate()
     End Sub
 
     Private Shared Sub AvatarChange(sender As Object, e As EventArgs)
@@ -235,7 +231,8 @@ NotInheritable Class Images
                     .Alignment = StringAlignment.Center,
                     .LineAlignment = StringAlignment.Center
             }
-            g.DrawString(UUID, headerFont, New SolidBrush(Color.Black), New Rectangle(0, 125, img.Width, img.Height), sf)
+            'g.DrawString(UUID, headerFont, New SolidBrush(Color.Black), New Rectangle(0, 125, img.Width, img.Height), sf)
+            g.DrawString($"{UUID}", headerFont, New SolidBrush(Color.Red), New Rectangle(-25, -35, img.Width, img.Height), sf)
         End Using
     End Sub
 
